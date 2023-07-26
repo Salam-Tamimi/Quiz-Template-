@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../images/login-registration-background.png);
+background-color: white;
   background-size: cover;
   font-family: "Outfit", sans-serif;
 }
@@ -25,7 +25,7 @@ body {
 #header {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: relative;margin-top: -50px;
 }
 #header #nav {
   border-radius: 10px;

@@ -7,7 +7,7 @@ corrAnswers.onload = function () {
   for (let i = 0; i < data.length; i++) {
     rightAns.push(data[i].correct_answers);
   }
-  for (i = 0; i <= 20; i++) {
+  for (i = 0; i < 20; i++) {
     body.innerHTML += `
    <div class="quiz-container">
     <h4 class="h">Question. ${[i + 1]}</h4> <br>
@@ -74,3 +74,8 @@ corrAnswers.onload = function () {
 };
 
 corrAnswers.send();
+
+
+function redirectToHomePage() {
+  window.location.href = "../index.html";
+}

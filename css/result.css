@@ -94,3 +94,20 @@ label {
     width: 100%;
   }
 }
+
+
+#home {  background-color: #a8a1fd;
+  width: 12%;
+  background-color: #a8a1fd;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  margin-left:45%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-style: none;
+  font-size: 17px;}
+  button:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 60px 0px rgba(94, 92, 154, 0.12);
+  }
