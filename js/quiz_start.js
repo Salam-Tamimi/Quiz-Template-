@@ -218,6 +218,18 @@ ${countofpage}/5
       }
       localStorage.setItem("mark", correct);
       finishQuiz.addEventListener("click", function () {
+        let users = JSON.parse(localStorage.users);
+        //let attempt = JSON.parse(localStorage.users).isAttempt;
+        if (localStorage.getItem("Answer").length >= 0) {
+          for (let i = 0; i < users.length; i++) {
+            if (users[i].isLoggedIn) {
+              users[i].isAttempt = true;
+              localStorage.setItem("users", JSON.stringify(users));
+              break;
+            }
+          }
+        }
+        localStorage.setItem("users", localStorage.users);
         if (correct >= 20) {
           window.location.assign("../pages/pass.html");
         } else {
